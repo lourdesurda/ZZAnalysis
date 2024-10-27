@@ -2,9 +2,7 @@ import os
 
 # Set up the NATModules muonScaleRes module
 def getMuonScaleRes(era, tag, is_mc, overwritePt=True) :
-#FIXME: module to be moved in NATModules
-#    from PhysicsTools.NATModules.modules.muonScaleRes import muonScaleRes 
-    from ZZAnalysis.NanoAnalysis.modules.muonScaleRes import muonScaleRes    
+    from PhysicsTools.NATModules.modules.muonScaleRes import muonScaleRes 
 
     if era != 2022: #FIXME add 2023
         raise ValueError("getMuonScaleRes: Era", era, "not supported")

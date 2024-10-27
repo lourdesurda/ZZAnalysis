@@ -176,7 +176,7 @@ ZZCandidateFiller::ZZCandidateFiller(const edm::ParameterSet& iConfig) :
   else abort();
 
   //-- kinematic refitter
-  kinZfitter = new KinZfitter(!isMC);
+  kinZfitter = new KinZfitter(!isMC, min(setup, 2018)); //FIXME: Run 3 not yet available!
 }
 
 ZZCandidateFiller::~ZZCandidateFiller(){
@@ -857,7 +857,7 @@ void ZZCandidateFiller::produce(edm::Event& iEvent, const edm::EventSetup& iSetu
 
       }
 
-      kinZfitter->Setup(selectedLeptons, selectedFsrMap);
+      kinZfitter->Setup(selectedLeptons, selectedFsrMap, setup);
       kinZfitter->KinRefitZ();
 
       ZZMassRefit = kinZfitter->GetRefitM4l();
