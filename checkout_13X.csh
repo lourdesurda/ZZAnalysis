@@ -39,10 +39,11 @@ git clone https://github.com/CJLST/ZZAnalysis.git ZZAnalysis
 
 #Common LHE tools (private FW update, based on v1.4.2)
 git clone https://github.com/namapane/CommonLHETools.git
+(cd CommonLHETools; git checkout for_Mela_2.4.2)
 
 #MELA
 git clone https://github.com/JHUGen/JHUGenMELA.git JHUGenMELA
-(cd JHUGenMELA; git checkout -b from-v240 v2.4.0; ./setup.sh)
+(cd JHUGenMELA; git checkout -b from-v242 v2.4.2; ./setup.sh)
 
 #MELA Analytics
 git clone https://github.com/MELALabs/MelaAnalytics.git
@@ -58,8 +59,8 @@ ln -s ${CMSSW_BASE}/src/JHUGenMELA/MELA/data/*/*.so \
       ${CMSSW_BASE}/lib/${SCRAM_ARCH}
 
 #kinematic refitting (obsolete?)
-git clone https://github.com/mhl0116/KinZfitter-1.git KinZfitter
-(cd KinZfitter ; git checkout -b from-27daebb 27daebb)
+git clone https://github.com/ferrico/KinZfitter.git KinZfitter
+(cd KinZfitter ; git checkout -b from-f781891 f781891)
 sed -i '/SimTracker\/Records/d' KinZfitter/HelperFunction/BuildFile.xml
 sed -i '/SimTracker\/Records/d' KinZfitter/KinZfitter/BuildFile.xml
 sed -i '/#include "RooMinuit.h"/d' KinZfitter/KinZfitter/interface/KinZfitter.h
