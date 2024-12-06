@@ -241,6 +241,11 @@ branchsel_out = ['drop *',
                  'keep HLT_TripleMu*',
                  'keep HLT_IsoMu*',
                  'keep HLT_passZZ*',
+                 'keep HLT_Calo*', #JETMET triggers studies
+                 'keep HLT_*PFJet*', #JETMET triggers studies
+                 'keep HLT_MET*', #JETMET triggers studies
+                 'keep HLT_PFHT*', #JETMET triggers studies
+                 'keep HLT_*Jet*', #JETMET triggers studies
                  'keep best*', # best candidate indices
                  'keep Z*', # Z, ZZ, ZLL candidates
                  'keep MET_pt',
