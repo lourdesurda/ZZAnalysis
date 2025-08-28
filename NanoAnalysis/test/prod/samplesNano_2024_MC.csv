@@ -5,6 +5,7 @@ identifier,process,crossSection=-1,BR=1,execute=True,dataset,prefix,pattern,spli
 ###,,,,,,,,,,,for ZH and ttH the BR is obtained as BR(H->ZZ->2L2X) = BR(H->4L) + BR(H->2L2q) + BR(H->ZZ*->2L2nu) * BR(H->2L2nu) / [ BR(H->ZZ*->2L2nu) + BR(H->WW*->2L2nu) ] where BR(H->4L) BR(H->2L2q) and BR(H->2L2nu) are taken from the YR4 twiki
 ###,,,,,,,,,,,for ZH the BR column includes also the gen filter efficiency: values for mH=124-126 = 0.15093 0.15069; 0.15012; 0.15058; 0.15045
 
+<<<<<<< HEAD
 ###,,,,,,,,,,,signal samples
 ggH125                   ,,52.23,0.0002745,,/GluGluH-Hto2Zto4L_Par-M-125_TuneCP5_13p6TeV_powheg-jhugen-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM,dbs,root://cms-xrd-global.cern.ch/,2,ADDLHEKINEMATICS=True;VVMODE=1;VVDECAYMODE=0;APPLY_QCD_GGF_UNCERT=True;NANOVERSION=15;LEPTON_SETUP=2024;ADD_ALLEVENTS=True,,
 
